@@ -1,0 +1,9 @@
+Muliply
+<form action="/multiply/" method="post">
+{% csrf_token %}
+N1<input type="text" name="n1"  value="{{ data.book.bookname}}">
+<br>
+N2<input type="text" name="n2" value="{{ data.book.price}}">
+<h2>{{ data.book }}</h2>
+<input type="submit" value="Book"/>
+</form>

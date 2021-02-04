@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<title>Test Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div>
+
+ {% include 'includes/header.html' %}
+
+
+ 
+</div>
+<div>
+ <h1>Name : {{data.name}}</h1>
+
+</div>
+<div>
+<table border='1'>
+ {% for key, value in data.items %}
+    <tr>
+        <td>{{key}}</td>
+        
+        <td>{{value}}</td>
+        
+    </tr>
+    {% endfor %}
+	</table>
+
+</div>
+
+
+<div>
+
+ {% include 'includes/footer.html' %}
+
+
+ 
+</div>
+</body>
+</html> 

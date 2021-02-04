@@ -1,0 +1,9 @@
+A simple template view
+<form action="/templateview/" method="post">
+{% csrf_token %}
+N1<input type="number" name="n1"  value="{{ data.n1}}">
+<br>
+N2<input type="number" name="n2" value="{{ data.n2}}">
+<h2>{{ data.sum }}</h2>
+<input type="submit" value="Add"/>
+</form>

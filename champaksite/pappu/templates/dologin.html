@@ -1,0 +1,9 @@
+Login Here
+<form action="/logincheck/" method="post">
+{% csrf_token %}
+Username<input type="text" name="username"  value="{{ data.username}}">
+<br>
+N2<input type="password" name="password" value="{{ data.password}}">
+<h2>{{ data.message }}</h2>
+<input type="submit" value="Login here"/>
+</form>
