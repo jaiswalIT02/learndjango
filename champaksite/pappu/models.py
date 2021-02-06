@@ -8,6 +8,8 @@ class BookModel(models.Model):
    subject = models.CharField(max_length = 50)
    price = models.IntegerField()
 
-
    class Meta:
       db_table = "books"
+
+      
+
