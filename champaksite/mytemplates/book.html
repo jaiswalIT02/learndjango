@@ -1,3 +1,4 @@
+<!----------------------
 Muliply
 <form action="/multiply/" method="post">
 {% csrf_token %}
@@ -6,4 +7,22 @@ N1<input type="text" name="n1"  value="{{ data.book.bookname}}">
 N2<input type="text" name="n2" value="{{ data.book.price}}">
 <h2>{{ data.book }}</h2>
 <input type="submit" value="Book"/>
+</form>--------->
+
+<html>
+    <head><title>Book</title></head>
+
+    <body>
+<form method="POST" action="inbook">
+    {% csrf_token %}
+    <input type="text" name="subject" value="{{data.subject}}"><br>
+    
+    <input type="text" name="bookname" value="{{data.bookname}}"><br>
+    
+    <input type="text" name="price" value="{{data.price}}"><br>
+
+     <button name="option" value="clear">Clear </button>    
+     <button name="option" value="submit">Submit </button>    
 </form>
+    </body>
+    </html>

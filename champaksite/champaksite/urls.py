@@ -17,13 +17,19 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+path('admin/', admin.site.urls),
 path("getbook/",views.getbook),
+path('inbook',views.inbook),
+path('innbook',views.innbook),
+path("getaccount/",views.getaccount), 
+path("addaccount/",views.addaccount),
+path("newaccount/",views.newaccount),
+path("addedaccount/",views.addedaccount),
 path("allbooks/",views.allbooks),
 path("addbook/",views.addbook),
-	path("mybook/",views.mybook),
-	path("multiply/",views.multiply),
-	path("'calculator/",views.calculator),
+path("mybook/",views.mybook),
+path("multiply/",views.multiply),
+path("'calculator/",views.calculator),
 path("simpleurl/", views.simpleurl),
 path("templateview/", views.templateview),
 path("testview/", views.testview),
@@ -34,5 +40,8 @@ path("dologin/",views.dologin),
 path("protected/",views.protected),
 path("logincheck/",views.logincheck),
 path("showdata/",views.showdata),
+path('sumsub/',views.sumsub),
 path("", views.index),
 ]
+
+
