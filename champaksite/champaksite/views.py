@@ -5,6 +5,7 @@ from pappu.models import Bankaccount
 from . import book
 
 
+
 def getbook(request):
 	book = BookModel.objects.get(id="2")
 
